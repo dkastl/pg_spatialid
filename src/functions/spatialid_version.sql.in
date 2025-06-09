@@ -1,0 +1,8 @@
+-- Version function
+CREATE OR REPLACE FUNCTION spatialid_version()
+RETURNS spatialid_version_info
+LANGUAGE sql IMMUTABLE AS $$
+  SELECT
+    '@EXT_VERSION@'::text AS extension_version,
+    '1.0.0'::text AS spec_version
+$$;
