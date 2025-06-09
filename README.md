@@ -5,7 +5,7 @@ Spatial ID (空間ID) utilities for PostgreSQL/PostGIS.
 ## Status
 
 - Extension version: 0.1.0
-- Implements: 空間ID standard v1.0.0
+- Implements Spatial ID (空間ID) specification v1.0
 
 ## Installation
 
