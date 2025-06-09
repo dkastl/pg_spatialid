@@ -4,3 +4,7 @@
 *.obj
 *.dll
 *.log
+
+# Ignore built SQL files
+build/
+pg_spatialid--*.sql
