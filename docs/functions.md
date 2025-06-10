@@ -14,9 +14,9 @@ Returns the extension and spec version information as a `spatialid_version_info`
 SELECT * FROM spatialid_version();
 
 -- Returns:
---       extension_version | spec_version
--- ------------------------+--------------
---                0.1.0    |   1.0.0
+--    extension_version | spec_version
+-- ---------------------+--------------
+--         0.1.0        |   1.0.0
 ```
 
 ## global_spatialid_schema()
@@ -44,9 +44,9 @@ SELECT
 FROM global_spatialid_schema();
 
 -- Returns:
---         bbox_wkt     | rotation | time_interval | time_origin
--- ---------------------+----------+---------------+------------
--- POLYGON Z ((...))    |   0      |     NULL      |   NULL
+--      box3d    | rotation | time_interval | time_origin
+-- --------------+----------+---------------+------------
+-- BOX3D(...)    |   0      |     NULL      |   NULL
 ```
 
 ## local_spatialid_schema()
@@ -87,9 +87,9 @@ FROM local_spatialid_schema(
 );
 
 -- Returns:
---              bbox_wkt               | rotation | time_interval | time_origin
--- ------------------------------------+----------+---------------+------------
--- POLYGON Z ((135 34 0, ..., ...))    |   0      |     NULL      |   NULL
+--    box3d      | rotation | time_interval | time_origin
+-- --------------+----------+---------------+------------
+-- BOX3D(...)    |   0      |     NULL      |   NULL
 ```
 
 ## make_bbox_polygonz
