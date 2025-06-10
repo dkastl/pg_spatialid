@@ -6,3 +6,6 @@ LANGUAGE sql IMMUTABLE AS $$
     '@EXT_VERSION@'::text AS extension_version,
     '1.0.0'::text AS spec_version
 $$;
+
+COMMENT ON FUNCTION spatialid_version() IS
+'Returns the extension and spec version information.';

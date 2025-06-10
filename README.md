@@ -35,13 +35,7 @@ After installation, in your database:
 CREATE EXTENSION pg_spatialid CASCADE;
 ```
 
-### Example: Show extension version
-
-```sql
-SELECT * FROM spatialid_version();
--- Returns: extension_version | spec_version
---                   0.1.0    |   1.0.0
-```
+Read more about the extension's features and usage in the [documentation](docs/index.md).
 
 ## Development
 
