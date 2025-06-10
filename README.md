@@ -1,11 +1,11 @@
 # SpatialID Extension
 
-Spatial ID (空間ID) utilities for PostgreSQL/PostGIS.
+[Spatial ID (空間ID)][1] utilities for PostgreSQL/PostGIS.
 
 ## Status
 
 * **Extension version:** 0.1.0
-* **Implements:** 空間ID (Spatial ID) specification v1.0
+* **Implements:** [空間ID (Spatial ID) specification v1.0][1]
 
 ## Requirements
 
@@ -53,3 +53,5 @@ Read more about the extension's features and usage in the [documentation](docs/i
 ## License
 
 This project is licensed under the [GNU General Public License v3.0](LICENSE).
+
+[1]: https://www.ipa.go.jp/digital/architecture/guidelines/4dspatio-temporal-guideline.html
