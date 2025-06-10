@@ -27,6 +27,12 @@ Spatial ID (空間ID) utilities for PostgreSQL/PostGIS.
    sudo make install
    ```
 
+3. **Run tests (optional):**
+
+   ```sh
+   make test
+   ```
+
 ## Usage
 
 After installation, in your database:
@@ -42,6 +48,7 @@ Read more about the extension's features and usage in the [documentation](docs/i
 * SQL source code is organized in `src/`, with templated files (`.sql.in`) and plain SQL.
 * Use `make clean` to remove build artifacts.
 * See Makefile for build details.
+* For testing, use `make test` to run the included SQL tests (requires `pg_prove`).
 
 ## License
 
