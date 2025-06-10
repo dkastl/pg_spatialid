@@ -21,7 +21,7 @@ SQL_SOURCES := $(TYPES_BUILD) $(FUNCTIONS_BUILD)
 # The built SQL file for packaging/install (must be in root for PGXS)
 BUILT_SQL := pg_spatialid--$(EXT_VERSION).sql
 
-.PHONY: all build install uninstall clean print-sources
+.PHONY: all build install uninstall clean print-sources test
 
 all: build
 
@@ -69,3 +69,7 @@ include $(PGXS)
 
 clean:
 	rm -rf build $(BUILT_SQL)
+
+# Add test target to call test/Makefile
+test:
+	$(MAKE) -C test test
