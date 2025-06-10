@@ -92,6 +92,27 @@ FROM local_spatialid_schema(
 -- BOX3D(...)    |   0      |     NULL      |   NULL
 ```
 
+**Example (with named parameters):**
+
+```sql
+SELECT
+  bbox::box3d AS box3d,
+  rotation,
+  time_interval,
+  time_origin
+FROM local_spatialid_schema(
+  origin => ST_MakePoint(135, 34, 0)::geometry(PointZ, 4326),
+  extent_x => 0.01,
+  extent_y => 0.01,
+  extent_z => 0.001
+);
+
+-- Returns:
+--    box3d      | rotation | time_interval | time_origin
+-- --------------+----------+---------------+------------
+-- BOX3D(...)    |   0      |     NULL      |   NULL
+```
+
 ## make_bbox_polygonz
 
 Creates a `POLYGON Z` geometry representing the rectangular base (bottom face) of a 3D bounding box, using two opposite corners and an SRID.
